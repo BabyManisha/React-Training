@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.heading1{
+  background-color: #61dafb;
+}
+
+section h2{
+  background-color: lightslategray;
+}
+
