@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import Fun from './1components/Fun';
-import ClassComponent from './1components/ClassComponent';
+import Fun from './Basics/1components/Fun';
+import ClassComponent from './Basics/1components/ClassComponent';
 
 import FunProps from './2props/FunProps'
 import ClassComponentProps from './2props/ClassComponentProps'
@@ -18,6 +18,7 @@ import ClassListKeys from './7lists&keys/ClassListKeys';
 import ReForms from './8forms/ReForms';
 import HeightCal from './9liftup/HeightCal';
 import Compo from './10composition/Compo';
+import { Fragment } from 'react';
 
 const element = <h1 className="heading1">Hello, SM World!</h1>;
 
@@ -114,9 +115,11 @@ function App() {
         <section>
           <h2>Composition</h2>
           <Compo header={'This is Head'} footer={'This is Footer'}>
-            <strong>This is BODY</strong>
-            <br/>
-            <b>Hellooo</b>
+            <Fragment>
+              <strong>This is BODY</strong>
+              <br/>
+              <b>Hellooo</b>
+              </Fragment>
           </Compo>
         </section>
         
