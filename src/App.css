@@ -45,3 +45,10 @@ section h2{
   background-color: lightslategray;
 }
 
+.navLink{
+  margin: 0 10px;
+}
+
+.activated{
+  background-color: yellow;
+}
