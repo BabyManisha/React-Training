@@ -15,6 +15,7 @@ import FunCond from './6conditionalrendering/FunCond';
 import ClassCond from './6conditionalrendering/ClassCond';
 import FunListKeys from './7lists&keys/FunListKeys';
 import ClassListKeys from './7lists&keys/ClassListKeys';
+import ReForms from './8forms/ReForms';
 
 const element = <h1 className="heading1">Hello, SM World!</h1>;
 
@@ -91,10 +92,16 @@ function App() {
 
         <section>
           <h2>List & Keys</h2>
+          <strong>Better not use index unless your list is static / fixed or no need to sort etc.. Use id kind of fixed unique property rather Index</strong>
           <ul>
             <li> <FunListKeys/> </li>
             <li> <ClassListKeys/> </li>
           </ul>
+        </section>
+
+        <section>
+          <h2>Forms</h2>
+          <ReForms/>
         </section>
         
       </main>
