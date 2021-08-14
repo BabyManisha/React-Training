@@ -1,6 +1,7 @@
 import React, {lazy, Suspense, useState} from 'react'
 import { BrowserRouter as Router, Link, Route, Switch, useRouteMatch } from 'react-router-dom'
 import Nesting from './1nestingNparam/Nesting'
+import ApiData from './3apis/ApiData';
 
 const DynamicLoad = lazy(() => import('./2dynamicLoading/DynamicLoad'));
 
@@ -28,6 +29,11 @@ export default function Advanced() {
                 <h2>Dynamic / Lazy Loading</h2>
                 <button onClick={() => setComp(true) }>Load the COmponent</button>
                 { comp &&  <Suspense fallback={"<b>Component is Loading......</b>"}><DynamicLoad/></Suspense> }
+            </section>
+
+            <section>
+                <h2>API Data</h2>
+                <ApiData/>
             </section>
         </div>
     )
