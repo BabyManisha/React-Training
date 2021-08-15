@@ -4,7 +4,6 @@ export default function useData(param) {
     const [data, setData] = useState();
 
     useEffect(() => {
-        alert(param)
         setData(parseInt(Math.random(param)*(param)))
     },[param]);
 
