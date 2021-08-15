@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeContext , useTheme} from './Parent'
+import { useTheme} from './Parent'
 
 export default function GChild() {
     const themeVal = useTheme();
