@@ -5,6 +5,7 @@ import Basics from './Basics/Basics';
 import Advanced from './Advanced/Advanced';
 
 import { BrowserRouter as Router, Link, NavLink, Route, Switch } from 'react-router-dom';
+import Hooks from './Hooks/Hooks';
 
 const element = <h1 className="heading1">Hello, SM World!</h1>;
 
@@ -23,6 +24,8 @@ function App() {
           {/* To Apply Styles we use this */}
           <NavLink activeClassName="activated" activeStyle={{color: 'red'}} to="/advanced" className="navLink">Advanced</NavLink>
 
+          <Link to="/hooks" className="navLink">Hooks</Link>
+
         </nav>
 
         <main>
@@ -39,6 +42,8 @@ function App() {
             </Route>
 
             <Route path='/advanced' component={Advanced} />
+
+            <Route path='/hooks' component={Hooks}/>
 
           </Switch>
 
